@@ -36,7 +36,7 @@ const addCars = () => {
 }
 
 const deleteCars = (id) => {
-    let index = dateCars.findIndex((user)=>user.id==id)
+    let index = dateCars.findIndex((car)=>car.id==id)
     dateCars.splice(index,1)
     for (let i=0; i<dateCars.length; i++) {
         dateCars[i].id=i
