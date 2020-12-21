@@ -1,0 +1,8 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    margin-left: 20px;
+}
