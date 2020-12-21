@@ -3,8 +3,8 @@ const dateCars = []
 const printfCars = () => {
     const table = document.getElementById("table")
     table.lastElementChild.innerHTML=``
-    for (const user of dateCars) {
-        table.lastElementChild.innerHTML+=`<tr><td>${user.id}</td><td>${user.brand}</td><td>${user.model}</td><td>${user.colour}</td><td>${user.year}</td><td>${user.price}</td><td><img width="150px" src="${user.image}" class="img-thumbnail" alt="Sin imagen"></td><td><button class="btn btn-danger" onclick="deleteCars(${user.id})">Remove</button><button onclick="toUpdate(${user.id})" class="btn btn-primary left">To update</button></td></tr>`
+    for (const car of dateCars) {
+        table.lastElementChild.innerHTML+=`<tr><td>${car.id}</td><td>${car.brand}</td><td>${car.model}</td><td>${car.colour}</td><td>${car.year}</td><td>${car.price}</td><td><img width="150px" src="${car.image}" class="img-thumbnail" alt="Sin imagen"></td><td><button class="btn btn-danger" onclick="deleteCars(${car.id})">Remove</button><button onclick="toUpdate(${car.id})" class="btn btn-primary left">To update</button></td></tr>`
     }
 }
 
