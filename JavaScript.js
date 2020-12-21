@@ -4,7 +4,7 @@ const printfCars = () => {
     const table = document.getElementById("table")
     table.lastElementChild.innerHTML=``
     for (const user of dateCars) {
-        table.lastElementChild.innerHTML+=`<tr><td>${user.id}</td><td>${user.brand}</td><td>${user.model}</td><td>${user.colour}</td><td>${user.year}</td><td>${user.price}</td><td><button class="btn btn-danger" onclick="deleteCars(${user.id})">Remove</button><button onclick="toUpdate(${user.id})" class="btn btn-primary left">To update</button></td></tr>`
+        table.lastElementChild.innerHTML+=`<tr><td>${user.id}</td><td>${user.brand}</td><td>${user.model}</td><td>${user.colour}</td><td>${user.year}</td><td>${user.price}</td><td><img width="150px" src="${user.image}" class="img-thumbnail" alt="Sin imagen"></td><td><button class="btn btn-danger" onclick="deleteCars(${user.id})">Remove</button><button onclick="toUpdate(${user.id})" class="btn btn-primary left">To update</button></td></tr>`
     }
 }
 
@@ -14,6 +14,7 @@ const addCars = () => {
     const colour = document.getElementById("Colour").value
     const year = document.getElementById("Year").value
     const price = document.getElementById("Price").value
+    const image = document.getElementById("Image").value
     const index = dateCars.length
     const id = index
     const arrCars = {
@@ -22,6 +23,7 @@ const addCars = () => {
             colour,
             year,
             price,
+            image,
             id
         }
     if (brand!="" && model!="" && colour!="" && year!="" && price!="") {
@@ -50,12 +52,14 @@ const toUpdate = (id) => {
     const colour = document.getElementById("Colour").value
     const year = document.getElementById("Year").value
     const price = document.getElementById("Price").value
+    const image = document.getElementById("Image").value
     const updCars = {
             brand,
             model,
             colour,
             year,
             price,
+            image,
             id
         }
         if (brand!="" && model!="" && colour!="" && year!="" && price!="") {
