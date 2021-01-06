@@ -29,7 +29,7 @@ function signUsers() {
 function loginUsers () {
     let users = JSON.parse(localStorage.getItem("loginUsers"));
     for (const user of users) {
-        if (user.email===document.getElementById("emailL").value && user.password===document.getElementById("passwordL").value && user.passwordConfirm===document.getElementById("passwordL").value) {
+        if (user.email===document.getElementById("emailL").value && user.password===document.getElementById("passwordL").value && user.confirmPassword===document.getElementById("passwordL").value) {
             window.location.href="./crud.html";
         } else {
             let passError = document.getElementById("passwordLogin");
