@@ -14,28 +14,21 @@
     <body>
 
         <div class="main-w3layouts wrapper">
-            <h1>SignUp</h1>
+            <h1>Login</h1>
             <div class="main-agileinfo">
-                <div id="father" class="agileits-top">
-                    <form id="form" onsubmit="event.preventDefault(), signUsers()">
-                        <input id="userName" class="text" type="text" name="Username" placeholder="Username" required>
-                        <input id="email" class="text email" type="email" name="email" placeholder="Email" required>
-                        <input id="password" class="text" type="password" name="password" placeholder="Password" required>
-                        <input id="confirmPassword" class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required>
+                <div class="agileits-top">
+                    <form id="form" onsubmit="event.preventDefault(), loginUsers()">
+                        <input id="emailL" class="text email" type="email" name="email" placeholder="Email" required="">
+                        <input id="passwordL" class="text" type="password" name="password" placeholder="Password" required="">
                         <div class="wthree-text">
-                            <label class="anim">
-                                <input type="checkbox" class="checkbox" required>
-                                <span id="insert">I Agree To The Terms & Conditions</span>
-                                <p id="codeNew" class="insertOb">Asegurate de que las contraseñas coincidan</p>
-                            </label>
                             <div class="clear"> </div>
                         </div>
+                        <p id="passwordLogin" class="insertOb">Introduce tu contraseña</p>
                         <input type="submit" value="SIGNUP">
                     </form>
-                    <p>Do you have an Account? <a href="./login.html"> Login Now!</a></p>
                     
+                    <p>Don`t have an Account? <a href="./index.html"> SignUp Now!</a></p>
                 </div>
-                
             </div>
   
             <div class="colorlibcopy-agile">
@@ -55,7 +48,6 @@
                 <li></li>
             </ul>
         </div>
-
-        <script src="./script.js"></script>
+<script src="./script.js"></script>
     </body>
 </html>
