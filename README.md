@@ -1,0 +1,1 @@
+# Este es un pequeño proyecto que hice acerca de un crud de autos, se debe loguear y en caso de no tener cuenta, crear una, luego de inciar sesión, se debe completar los datos básicos de un crud, donde se tiene la opción de poner los links de imágenes para que salga la imágen.
